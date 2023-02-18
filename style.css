@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Rockwell";
+    src: url(../Rockwell.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* CSS General */
+
+
+:root{
+    --rose: 234, 145, 145;
+    --bleu: 75, 73, 117;
+    --jaune: 230, 179, 49;
+
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h2, h3{
+    font-family: "Rockwell", sans-serif;
+    color: rgb(var(--bleu));
+}
+
+h2{
+    font-size: 32px;
+    
+}
+
+h3{
+    font-size: 20px;
+}
+
+.Rockwell{
+    font-family: "Rockwell", sans-serif;
+}
+
+.btn.btn-main{
+    
+    background-color:rgb(var(--rose));
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn.btn-white{
+    background-color:white;
+    border-radius: 50px;
+    color: rgb(var(--rose));
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+
+}
+
+.btn.btn-white:hover{
+    transform: translateY(-5px);
+
+}
+
+/* CSS par section */
+
+header{
+    background-image:linear-gradient(to top right,rgba(var(--rose),0.5), rgba(var(--bleu),0.5)), url(img/photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    
+}
+
+header img{
+    height: 50px;
+}
+
+header .txt{
+    margin: 150px 0;
+}
+
+
+header::after{
+    content: "";
+    width: 50px;
+    background-color: white;
+    height: 50px;
+    position: absolute;
+    rotate: 45deg;
+    left: calc(50% - 25px);
+    bottom: -25px;
+}
+
+/* Main */
+
+#naturel{
+
+    margin: 150px 80px 100px 80px;
+}
+
+#naturel h2{
+    position: relative;
+}
+
+#naturel h2::before{
+    content: "";
+    background-image: url(img/grain.png), linear-gradient(rgb(var(--jaune)), rgb(var(--jaune)));
+    background-size: cover;
+    position: absolute;
+    width: 150px;
+    height: 140px;
+    z-index: -1;
+    margin-top: -50px;
+    top: -10px;
+    left: -1px;
+}
+
+#produit img{
+    width: 200px;
+}
+
+#produit h2{
+    color: rgb(var(--rose));
+}
+
+
+
+footer{
+    background-image: linear-gradient(to top right,rgb(var(--bleu)), rgb(var(--rose)), rgb(var(--jaune))) ;
+    padding: 30px;
+}
+
+footer img{
+    width: 40px;
+}
+
+footer h3{
+    color: white;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+footer .info{
+    width: 80%;
+    margin: 10px 0 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.195);
+    
+}
+
+.infoperso{
+    padding-left: 150px;
+}
+
+.mail::before{
+    content: "";
+    height: 50px;
+    width: 1px;
+    display: block;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.mail::after{
+    content: "";
+    height: 1px;
+    width: 50px;
+    display: block;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.adresse{
+    margin-left: 110px;
+    margin-top: -20px;
+}
+
+.adresse::after{
+    content: "";
+    height: 50px;
+    width: 1px;
+    display: block;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rue{
+    margin-left: 85px;
+}
+
+.socio img{
+    margin: 10px;
+}
+
+.socio{
+    margin-left: 40px;
+}
+
+hr{
+    width: 50%;
+    margin:20px auto;
+}
+
+footer .btn{
+    margin-left: 33%;
+    margin-top: -45px;
+}
+
+/* *********************PAGE2*********************** */
+
+/* carousel */
+
+
+
+.carousel-item img{
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+#carousel h2,
+.rest h2{
+    color: rgb(var(--rose));
+}
+
+.rest img{
+    width: 200px;
+}
